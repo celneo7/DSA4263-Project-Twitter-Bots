@@ -11,9 +11,8 @@ Insights from this project can support:
 * E-commerce and advertising systems in mitigating bot-driven fraud
 * Researchers studying online manipulation and inauthentic behaviour
 
----
 
-## ** Objectives**
+## Objectives
 
 The main goals of this project are to:
 
@@ -22,9 +21,7 @@ The main goals of this project are to:
 3. **Build machine learning models** to detect bots
 4. **Identify fraud-related patterns** that could guide real-world bot-detection strategies
 
----
-
-## ** Repository Structure**
+## Repository Structure
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
@@ -113,8 +110,7 @@ Open and run Jupyter notebooks in following order:
 notebooks/preprocessing.ipynb
 notebooks/data_exploration.ipynb
 notebooks/hypothesis
-
 ```
 
----
+
 
