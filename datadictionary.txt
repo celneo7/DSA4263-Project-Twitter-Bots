@@ -1,0 +1,93 @@
+**Field Definitions**
+
+default_profile
+Type: Boolean
+Description: Indicates whether the account uses Twitter’s default profile settings (True = default, False = customised).
+
+default_profile_image
+Type: Boolean
+Description: Indicates whether the account uses the default profile image (often correlated with low-effort or bot accounts).
+
+description
+Type: String
+Description: Original profile bio provided by the user, before any cleaning or translation.
+
+favourites_count
+Type: Integer
+Description: Total number of tweets the account has liked.
+
+followers_count
+Type: Integer
+Description: Number of followers the account has.
+
+friends_count
+Type: Integer
+Description: Number of accounts the user is following.
+
+geo_enabled
+Type: Boolean
+Description: Indicates whether geographic tagging is enabled for the user’s tweets.
+
+id
+Type: Integer
+Description: Unique numeric identifier for the Twitter account.
+
+lang
+Type: String
+Description: Twitter’s original language field (from tweets/UI), often sparse or unreliable for bios.
+
+verified
+Type: Boolean
+Description: Indicates whether the user has a verified Twitter badge.
+
+average_tweets_per_day
+Type: Float
+Description: Average number of tweets posted per day since account creation.
+
+account_age_days
+Type: Integer
+Description: Number of days since the account was created.
+
+account_type
+Type: Categorical
+Description: Human-assigned label indicating whether the account is a human or bot.
+
+word_count
+Type: Integer
+Description: Number of words in the cleaned profile description.
+
+mean_word_length
+Type: Float
+Description: Average word length in the description (proxy for writing complexity).
+
+hashtag_count
+Type: Integer
+Description: Number of hashtags (#) present in the description.
+
+handle_count
+Type: Integer
+Description: Number of user mentions (@username) in the description.
+
+url_count
+Type: Integer
+Description: Number of URLs present in the description.
+
+description_language
+Type: String
+Description: Language of the profile description as detected by FastText.
+
+description_en
+Type: String
+Description: English-translated version of the profile description (or empty if unsupported).
+
+description_en_embeddings
+Type: List (384-d)
+Description: Sentence-Transformer (MiniLM-L6-v2) embedding vector representing semantic meaning of the English description.
+
+log_followers_friends_ratio
+Type: Float
+Description: Log-transformed ratio of followers to friends (avoids division-by-zero, captures asymmetry).
+
+cluster_id
+Type: Integer
+Description: Topic cluster assigned via BERTopic, grouping bios into semantic topics.
