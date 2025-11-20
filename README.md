@@ -112,5 +112,33 @@ notebooks/data_exploration.ipynb
 notebooks/hypothesis
 ```
 
+## Data Dictionary 
+
+| Column Name                   | Type            | Description |
+|------------------------------|-----------------|-------------|
+| **default_profile**          | Boolean         | Indicates whether the account uses Twitter’s default profile settings (True = default, False = customised). |
+| **default_profile_image**    | Boolean         | Indicates whether the user is using the default profile image (often associated with low-effort or bot accounts). |
+| **description**              | String          | Original profile description (bio) provided by the user, before cleaning or translation. |
+| **favourites_count**         | Integer         | Total number of tweets the account has liked. |
+| **followers_count**          | Integer         | Number of followers the account has. |
+| **friends_count**            | Integer         | Number of accounts the user is following. |
+| **geo_enabled**              | Boolean         | Indicates whether the account has enabled geographic tagging for tweets. |
+| **id**                       | Integer         | Unique numeric identifier for the Twitter account. |
+| **lang**                     | String          | Twitter’s original language field inferred from Tweets or UI settings; often empty or unreliable for bios. |
+| **verified**                 | Boolean         | Indicates whether the account is verified by Twitter (badge status). |
+| **average_tweets_per_day**   | Float           | Average number of tweets posted per day since account creation. |
+| **account_age_days**         | Integer         | Number of days since the account was created. |
+| **account_type**             | Categorical     | Target variable indicating whether the account is labelled as human or bot. |
+| **word_count**               | Integer         | Number of words in the cleaned profile description. |
+| **mean_word_length**         | Float           | Average word length in the description (proxy for writing complexity). |
+| **hashtag_count**            | Integer         | Number of hashtags (#) present in the profile description. |
+| **handle_count**             | Integer         | Number of user mentions (@username) present in the description. |
+| **url_count**                | Integer         | Number of URLs present in the description. |
+| **description_language**     | String          | Language of the profile description as predicted by the FastText language identification model. |
+| **description_en**           | String          | English-translated version of the description using Helsinki-NLP models, or an empty string for unsupported languages. |
+| **description_en_embeddings**| List (384-d)    | 384-dimensional semantic embedding of `description_en` generated using SentenceTransformer (MiniLM-L6-v2). |
+| **log_followers_friends_ratio** | Float      | Log-transformed ratio of followers to friends, capturing relational asymmetry while preventing division-by-zero issues. |
+| **cluster_id**               | Integer         | Topic cluster assigned to each description using BERTopic; represents semantic grouping of bios. |
+
 
 
