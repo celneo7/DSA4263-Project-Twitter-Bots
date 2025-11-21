@@ -45,7 +45,7 @@ The main goals of this project are to:
 
 ## **Getting started**
 
-1. Ensure you have Python and Node.js installed on your system.
+1. Ensure you have Python and Jupyter notebook installed on your system.
 
 2. Clone the repository:
 
@@ -115,6 +115,3 @@ notebooks/Models.ipynb
 | **description_en_embeddings**| List (384-d)    | 384-dimensional semantic embedding of `description_en` generated using SentenceTransformer (MiniLM-L6-v2). |
 | **log_followers_friends_ratio** | Float      | Log-transformed ratio of followers to friends, capturing relational asymmetry while preventing division-by-zero issues. |
 | **cluster_id**               | Integer         | Topic cluster assigned to each description using BERTopic; represents semantic grouping of bios. |
-
-
-
