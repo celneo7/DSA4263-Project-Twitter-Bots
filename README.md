@@ -69,6 +69,13 @@ python3 -m venv venv
 venv/Scripts/activate
 pip install -r requirements.txt
 ```
+## Data
+The dataset is not stored in this repository due to its large size.
+All notebooks will automatically download, preprocess, and save the data
+to the appropriate folders for full reproducibility.
+
+Datasets (raw, interim, preprocessed) can also be accessed directly via:
+[Google Drive](https://drive.google.com/drive/folders/1td_xBh4Ssk-_aVDtupbQ986e_wg0Royf)
 
 ## Usage
 
