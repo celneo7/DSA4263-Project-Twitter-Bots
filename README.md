@@ -109,7 +109,8 @@ Open and run Jupyter notebooks in following order:
 ```
 notebooks/preprocessing.ipynb
 notebooks/data_exploration.ipynb
-notebooks/hypothesis
+notebooks/hypothesis.ipynb
+notebooks/Models.ipynb
 ```
 
 ## Data Dictionary 
