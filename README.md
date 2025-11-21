@@ -45,7 +45,7 @@ The main goals of this project are to:
 
 ## **Getting started**
 
-1. Ensure you have Python and Jupyter notebook installed on your system.
+1. Ensure you have Python (Ver 3.12.3) and Jupyter notebook installed on your system.
 
 2. Clone the repository:
 
